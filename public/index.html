@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="text-gray-600 font-body">
-    <div class="grid grid-cols-3 h-screen">
+    <div class="grid md:grid-cols-3 h-screen">
       <div class="h-full">
         <nav>
           <div>
@@ -29,10 +29,10 @@
         </nav>
       </div>
 
-      <main class="px-16 py-6 bg-gray-100 col-span-2">
+      <main class="px-16 py-6 bg-gray-100 md:col-span-2">
         <div class="text-primary flex justify-center md:justify-end">
-          <a href="#">Log in</a>
-          <a href="#" class="ml-2">Sign up</a>
+          <a href="#" class="btn btn--red">Log in</a>
+          <a href="#" class="ml-2 btn btn--red">Sign up</a>
         </div>
 
         <header>
@@ -108,7 +108,11 @@
           </div>
 
           <div class="flex justify-center">
-            <div class="bg-secondary-100 text-secondary-200">Load more</div>
+            <div
+              class="bg-secondary-100 text-secondary-200 btn hover:scale-125 hover:bg-opacity-50 hover:shadow-inner"
+            >
+              Load more
+            </div>
           </div>
         </div>
       </main>
